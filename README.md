@@ -25,3 +25,5 @@ let dom = cat.el('.cat');
 
 let doms = cat.el('.cats dogs')
 ```
+
+remember: if selector return more than one htmldom, you'll get an array of htmldoms
