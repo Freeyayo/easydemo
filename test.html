@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div class="cats">pop</div>
+	<div class="cats fake"></div>
+	<div class="cats"></div>
+	<div class="cats fake"></div>
+	<div class="cats"></div>
+	<div class="fake"></div>
+
+
+   <!-- <script src="index.js"></script>  -->  
+   <script type="text/javascript"> 
+
+   	 let cat = require('./index')
+
+
+	 let doms = cat.el('.cats fake');
+
+	// let doms2 = cat.el('.fake');
+
+	 cat.addStyle(doms, {
+	 	'width':'100px',
+	 	'height':'100px',
+	 	'background-color':'black'
+	 })
+
+	
+
+   </script>
+</body>
+</html>
