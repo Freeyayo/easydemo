@@ -1,3 +1,3 @@
 # EasydemoJS
 
-EasydemoJS is a JavaScript library. It contains many methods which can make your JavaScript demo easier!
+EasydemoJS is a JavaScript library. It contains many methods which can make your JavaScript demo easier ! Sometimes developers just want to write down a simple demo to test if their code can run normally or just need to watch a simple effect rendered from CSS or JS code. But debug tools such as Chrome DevTool are not very suitable for everyone. This library has many convinient ways to  
