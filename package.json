@@ -2,7 +2,7 @@
   "name": "easydemo",
   "version": "1.0.0",
   "description": "write a demo easily like love a cat",
-  "main": "lib/easydemo",
+  "main": "lib/cat.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
