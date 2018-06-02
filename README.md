@@ -26,4 +26,17 @@ let dom = cat.el('.cat');
 let doms = cat.el('.cats dogs')
 ```
 
-remember: if selector return more than one htmldom, you'll get an array of htmldoms
+Remember: if selector return more than one htmldom, you'll get an array of htmldoms
+
+
+
+### Method
+
+cat.eachInnerHTML(domArr, innerHtml)    
+
+ ```javascript
+ // set innerHTML to every element return from dom array
+ let cats = cat.el('.cats') 
+
+ cat.eachInnerHTML(cats, '<p>hello, we are cats !</p>')
+```

@@ -10,24 +10,40 @@
 	<div class="cats"></div>
 	<div class="cats fake"></div>
 	<div class="cats"></div>
-	<div class="fake"></div>
+	<div id="fake"></div>
+
+	<input id='textData'></input>
 
 
    <script src="lib/cat.js"></script>   
    <script type="text/javascript"> 
 
-	 let doms = cat.el('.cats fake');
+	//  let doms = cat.el('.cats');
 
-	// let doms2 = cat.el('.fake');
+	// // let doms2 = cat.el('.fake');
 
-	 cat.addStyle(doms, {
-	 	'width':'100px',
-	 	'height':'100px',
-	 	'background-color':'black'
-	 })
+	//  cat.addStyle(doms, {
+	//  	'width':'100px',
+	//  	'height':'100px',
+	//  	'background-color':'black'
+	//  })
 
-	
+	 let inp = cat.el('#textData')
 
+	 let box = cat.el('#fake')
+
+	 let name = Symbol('name');
+
+	 let obj = {
+	 	name:'tsai',
+	 	age: 20
+	 }
+
+	 cat.iterable(obj);
+
+	 for(let i of obj){
+	 	console.log(i)
+	 }
    </script>
 </body>
 </html>
