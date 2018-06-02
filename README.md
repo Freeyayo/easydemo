@@ -34,7 +34,7 @@ Remember: if selector return more than one htmldom, you'll get an array of htmld
 ### Method
 
 
-cat.eachInnerHTML(domArr, innerHtml)    
+#### cat.eachInnerHTML(domArr, innerHtml)    
 
  ```javascript
  // set innerHTML to every element return from selector
@@ -44,7 +44,7 @@ cat.eachInnerHTML(domArr, innerHtml)
 ```
 
 
-cat.eachDomAttr(domArr, attr, val)   
+#### cat.eachDomAttr(domArr, attr, val)   
 
  ```javascript
  // set attribute to every element return from selector
@@ -54,7 +54,7 @@ cat.eachDomAttr(domArr, attr, val)
  ```
 
 
- cat.attr(dom, attr, val)   
+#### cat.attr(dom, attr, val)   
 
  ```javascript
  // set attribute to specific element return from selector
@@ -64,7 +64,7 @@ cat.eachDomAttr(domArr, attr, val)
  ```
 
 
- cat.class(dom, val)   
+#### cat.class(dom, val)   
 
  ```javascript
  // set class name to specific element return from selector
@@ -74,7 +74,7 @@ cat.eachDomAttr(domArr, attr, val)
  ```
 
 
- cat.addStyle(dom(s), style, val) & cat.addStyle(dom(s), {styleObject})   
+#### cat.addStyle(dom(s), style, val) & cat.addStyle(dom(s), {styleObject})   
 
  ```javascript
  // set style to specific element or dom array return from selector. if there's only two arguments, the second one must an object
@@ -92,7 +92,7 @@ cat.eachDomAttr(domArr, attr, val)
  ```
 
 
- getAllKeys(obj)   
+#### cat.getAllKeys(obj)   
 
  ```javascript
  // return all keys from specific object including Symbol value
@@ -109,7 +109,7 @@ cat.eachDomAttr(domArr, attr, val)
  ``` 
 
 
- cat.iterable(obj)  
+#### cat.iterable(obj)  
 
  ```javascript
  // make specific object iterable
