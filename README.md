@@ -32,6 +32,7 @@ Remember: if selector return more than one htmldom, you'll get an array of htmld
 
 ### Method
 
+
 cat.eachInnerHTML(domArr, innerHtml)    
 
  ```javascript
@@ -40,3 +41,12 @@ cat.eachInnerHTML(domArr, innerHtml)
 
  cat.eachInnerHTML(cats, '<p>hello, we are cats !</p>')
 ```
+
+
+cat.eachDomAttr(domArr, attr, val)   
+
+ ```javascript
+ // set attribute to every element return from dom array
+ let cats = cat.el('.cats') 
+
+ cat.eachDomAttr(cats, 'title', 'broadcast')
