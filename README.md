@@ -118,6 +118,8 @@ Remember: if selector return more than one htmldom, you'll get an array of htmld
  	dog: 'bark'
  }
 
+ cat.iterable(animals)
+
  for(let i of animals){
  	console.log(i)		//{cat: 'meow', dog: 'bark'}
  }
