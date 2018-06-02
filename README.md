@@ -37,7 +37,7 @@ Remember: if selector return more than one htmldom, you'll get an array of htmld
 cat.eachInnerHTML(domArr, innerHtml)    
 
  ```javascript
- // set innerHTML to every element return from dom array
+ // set innerHTML to every element return from selector
  let cats = cat.el('.cats') 
 
  cat.eachInnerHTML(cats, '<p>hello, we are cats !</p>')
@@ -47,7 +47,78 @@ cat.eachInnerHTML(domArr, innerHtml)
 cat.eachDomAttr(domArr, attr, val)   
 
  ```javascript
- // set attribute to every element return from dom array
+ // set attribute to every element return from selector
  let cats = cat.el('.cats') 
 
- cat.eachDomAttr(cats, 'title', 'broadcast')
+ cat.eachDomAttr(cats, 'title', 'manyCats')
+ ```
+
+
+ cat.attr(dom, attr, val)   
+
+ ```javascript
+ // set attribute to specific element return from selector
+ let cat = cat.el('#cat') 
+
+ cat.attr(cats, 'title', 'singleCat')
+ ```
+
+
+ cat.class(dom, val)   
+
+ ```javascript
+ // set class name to specific element return from selector
+ let cat = cat.el('#cat') 
+
+ cat.attr(cats, 'catty')
+ ```
+
+
+ cat.addStyle(dom(s), style, val) & cat.addStyle(dom(s), {styleObject})   
+
+ ```javascript
+ // set style to specific element or dom array return from selector. if there's only two arguments, the second one must an object
+ let cat = cat.el('#cat')
+
+ let dogs = cat.el('.dogs') 
+
+ cat.addStyle(cat, 'height', '100px')
+
+ cat.addStyle(dogs, {
+ 	'height': '100px',
+ 	'width': '100px',
+ 	'background-color': 'blue'
+ })
+ ```
+
+
+ getAllKeys(obj)   
+
+ ```javascript
+ // return all keys from specific object including Symbol value
+ let cat = Symbol('animal')
+
+ const animals = {
+ 	[cat]: 'meow',
+ 	dog: 'bark'
+ }
+
+ Object.keys(animals)		//["dog"]
+
+ cat.getAllKey(animals)		//[symbol[animal],"dog"]
+ ``` 
+
+
+ cat.iterable(obj)  
+
+ ```javascript
+ // make specific object iterable
+ const animals = {
+ 	cat: 'meow',
+ 	dog: 'bark'
+ }
+
+ for(let i of animals){
+ 	console.log(i)		//{cat: 'meow', dog: 'bark'}
+ }
+ ``` 	
